@@ -12,6 +12,7 @@ pipeline {
 echo ${M2_HOME}
 echo ${MAVEN_HOME}
 mvn clean install'''
+        pwd(tmp: true)
       }
     }
   }
