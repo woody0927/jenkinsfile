@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('initialize') {
       steps {
-        echo 'initialize the job'
+        git(url: 'https://github.com/woody0927/guava-tips', branch: 'master')
       }
     }
   }
