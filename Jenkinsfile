@@ -9,6 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         pwd(tmp: true)
+        sh 'mvn clean install'
       }
     }
   }
